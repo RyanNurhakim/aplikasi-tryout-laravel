@@ -20,7 +20,7 @@
                         <li>Penilaian IRT (Khusus TO SNBT Premium)</li>
                         <li>Tanpa Pembahasan</li>
                     </ul>
-                    <button @click="open = true" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-500 transition">
+                    <button @click="open = true" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-500 transition cursor-pointer">
                         Coba Sekarang
                     </button>
                 </div>
@@ -50,8 +50,8 @@
             <!-- Card: Paket Basic -->
             <div class="bg-white rounded-lg shadow p-5 text-gray-900 border hover:shadow-lg transition">
                 <h3 class="text-lg font-semibold mb-1">Paket Basic</h3>
-                <p class="text-sm text-gray-600 mb-2">Paket 3x tryout SBNT</p>
-                <div class="text-xl font-bold text-indigo-600 mb-3">Rp 25.000</div>
+                <p class="text-sm text-gray-600 mb-2">Paket 2x tryout SBNT</p>
+                <div class="text-xl font-bold text-indigo-600 mb-3">Rp 35.000</div>
                 <ul class="text-sm text-gray-700 mb-4 list-disc list-inside space-y-1">
                     <li>Variasi Soal Ter-update dan Prediktif</li>
                     <li>Penilaian IRT (Khusus TO SNBT Premium)</li>
@@ -76,7 +76,7 @@
             <!-- Card: Paket Ultimate -->
             <div class="bg-white rounded-lg shadow p-5 text-gray-900 border hover:shadow-lg transition">
                 <h3 class="text-lg font-semibold mb-1">Paket Ultimate</h3>
-                <p class="text-sm text-gray-600 mb-2">Paket 5x tryout SBNT</p>
+                <p class="text-sm text-gray-600 mb-2">Paket 10x tryout SBNT</p>
                 <div class="text-xl font-bold text-indigo-600 mb-3">Rp 150.000</div>
                 <ul class="text-sm text-gray-700 mb-4 list-disc list-inside space-y-1">
                     <li>Variasi Soal Ter-update dan Prediktif</li>

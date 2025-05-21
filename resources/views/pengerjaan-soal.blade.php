@@ -62,7 +62,7 @@
                             },
 
                             startTimer() {
-                                // Cek localStorage dulu, pakai waktu tersisa kalau ada
+                                // Periksa apakah ada waktu tersisa di localStorage, jika tidak gunakan initialDuration.
                                 const savedTime = localStorage.getItem(this.storageKey);
                                 this.timeLeft = savedTime !== null ? parseInt(savedTime) : initialDuration;
 
@@ -77,7 +77,7 @@
                                     } else {
                                         clearInterval(this.interval);
                                         this.formattedTime = "00:00";
-                                        localStorage.removeItem(this.storageKey); // hapus supaya reset jika reload setelah habis
+                                        localStorage.removeItem(this.storageKey);
                                         alert("Waktu habis!");
                                     }
                                 }, 1000);
@@ -129,6 +129,7 @@
                     <h2 class="text-xl font-bold mb-2">Soal No. {{ $soal['no_soal'] }}</h2>
                     <p class="text-gray-700">{!! $soal['soal'] !!}</p><br>
 
+                    <!-- Option Jawaban -->
                     <div class="space-y-3">
                         @foreach ($soal['tryout_question_option'] as $option)
                         <label class="flex items-center space-x-2">
@@ -251,16 +252,16 @@
                         if (jawaban === "1") {
                             benar++;
                         }
-                        localStorage.removeItem('answer_' + id); // hapus jawaban soal
+                        localStorage.removeItem('answer_' + id); // hapus jawaban
                     });
 
-                    localStorage.removeItem('simulasi_waktu_tersisa'); // hapus waktu
-
+                    localStorage.removeItem('simulasi_waktu_tersisa'); // hapus waktu agar reset
                     const skor = benar * 20;
+
+                    // Redirect ke dashboard (atau ganti ke halaman hasil)
                     window.location.href = `/dashboard?benar=${benar}&total=${soalIds.length}&skor=${skor}`;
                 });
             }
-
         });
     </script>
 

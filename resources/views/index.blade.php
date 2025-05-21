@@ -90,7 +90,7 @@
     </section>
 
     <footer class="bg-white text-center py-6 border-t">
-        <p class="text-sm text-gray-500">&copy; {{ date('Y') }} Tryout Online. All rights reserved.</p>
+        <p class="text-sm text-gray-500">&copy; {{ date('Y') }} Tryout Online. All rights reserved. By Ryan Nurhakim</p>
     </footer>
 
     <script>
