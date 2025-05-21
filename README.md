@@ -2,7 +2,9 @@
 
 Sebuah aplikasi web berbasis Laravel yang digunakan untuk menyelenggarakan tryout atau ujian simulasi secara online. Aplikasi ini dirancang untuk memberikan pengalaman seperti ujian sungguhan bagi pengguna, dengan fitur timer, penilaian otomatis, dan tampilan interaktif.
 
-![Tampilan Aplikasi Tryout Online](public/screenshot/landing-page.png)
+![Tampilan Aplikasi Tryout Online](public/screenshot/landing-page-1.png)
+
+<b> Untuk Screenshot lebih lengkap nya ada di public/screenshot </b>
 
 ---
 
